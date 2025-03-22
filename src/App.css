@@ -1,0 +1,49 @@
+.mealbox-image {
+    width: 100%;
+}
+
+.mealbox-content {
+    height: 100%;
+
+    .mealbox-message {
+        font-weight: bolder;
+
+        span {
+            font-style: italic;
+            font-weight: lighter;
+        }
+    }
+}
+
+.reason-card {
+    margin-bottom: 10px;
+    .card-body {
+        min-height: 216px;
+    }
+    img {
+        width: 100px;
+    }
+    p {
+        font-weight: bold;
+    }
+}
+
+.subscription-card {
+    height: 200px !important;
+    background-image: url('./foodbg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px !important;
+
+    .overlay {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.717);
+        border-radius: 10px;
+    }
+
+    h3, p {
+        color: #FFFFFF;
+    }
+}

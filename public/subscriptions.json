@@ -1,0 +1,19 @@
+{
+    "subscriptions": [
+        {
+            "id": 1,
+            "title": "Monthly Subscription Plan",
+            "description": "Most Affordable"
+        },
+        {
+            "id": 2,
+            "title": "Bi-Weekly Subscriptions",
+            "description": "Convinient for sure"
+        },
+        {
+            "id": 3,
+            "title": "Weekly Subscriptions",
+            "description": "peoples choice"
+        }
+    ]
+}

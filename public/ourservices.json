@@ -1,0 +1,34 @@
+{
+    "services": [
+        {
+            "id": 1,
+            "title": "Affordable Meal Plans",
+            "image": "./affordable.png"
+        },
+        {
+            "id": 2,
+            "title": "Always get Best deals for our Meal plans",
+            "image": "./bestdeal.webp"
+        },
+        {
+            "id": 3,
+            "title": "Flexible scheduling for Meal plans",
+            "image": "./clock.jpeg"
+        },
+        {
+            "id": 4,
+            "title": "Get Free delivery every time",
+            "image": "./delivery.avif"
+        },
+        {
+            "id": 5,
+            "title": "Enjoy wide range of menu",
+            "image": "./menu.webp"
+        },
+        {
+            "id": 6,
+            "title": "Custmoizable Meals",
+            "image": "./customisable.png"
+        }
+    ]
+}
