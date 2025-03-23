@@ -1,6 +1,7 @@
 import React from 'react'
+import { connect } from 'react-redux'
 
-export default function Services({ data }) {
+function Services({ data = [] }) {
     return (
         <div className='container mb-5'>
             <h2 className='mb-5 text-center'>Why MyMealPlan?</h2>
@@ -19,3 +20,11 @@ export default function Services({ data }) {
         </div>
     )
 }
+
+const mapStateToProps = (state  ={}) => {
+    return {
+        data: state.services.data
+    };
+}
+
+export default connect(mapStateToProps, null)(Services);

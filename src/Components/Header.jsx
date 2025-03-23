@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import {
   Collapse,
   Navbar,
@@ -20,23 +21,36 @@ function Header(args) {
   const toggle = () => setIsOpen(!isOpen);
 
   return (
-      <Navbar {...args}>
-        <NavbarBrand href="/">MyMealPlan</NavbarBrand>
-        <NavbarToggler onClick={toggle} />
-        <Collapse isOpen={isOpen} navbar>
-          <Nav className="me-auto" navbar>
-            <NavItem>
-              <NavLink href="">
+    <Navbar {...args}>
+      <NavbarBrand href="/">MyMealPlan</NavbarBrand>
+      <NavbarToggler onClick={toggle} />
+      <Collapse isOpen={isOpen} navbar>
+        <Nav className="me-auto" navbar>
+          <NavItem>
+            <NavLink>
+              <Link to={"/shop"}>
+                Shop
+              </Link>
+            </NavLink>
+          </NavItem>
+          <NavItem>
+            <NavLink>
+              <Link to={'/services'}>
                 Services
-              </NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink href="">Subscriptions</NavLink>
-            </NavItem>
-          </Nav>
-          <NavbarText>Cart</NavbarText>
-        </Collapse>
-      </Navbar>
+              </Link>
+            </NavLink>
+          </NavItem>
+          <NavItem>
+            <NavLink>
+              <Link to={"/subscriptions"}>Subscriptions</Link>
+            </NavLink>
+          </NavItem>
+        </Nav>
+        <NavbarText>
+          <Link to={'/cart'}>Cart</Link>
+        </NavbarText>
+      </Collapse>
+    </Navbar>
   );
 }
 
