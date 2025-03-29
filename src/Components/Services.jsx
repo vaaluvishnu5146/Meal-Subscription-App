@@ -1,5 +1,4 @@
 import React from 'react'
-import { connect } from 'react-redux'
 
 function Services({ data = [] }) {
     return (
@@ -21,10 +20,4 @@ function Services({ data = [] }) {
     )
 }
 
-const mapStateToProps = (state  ={}) => {
-    return {
-        data: state.services.data
-    };
-}
-
-export default connect(mapStateToProps, null)(Services);
+export default Services;
